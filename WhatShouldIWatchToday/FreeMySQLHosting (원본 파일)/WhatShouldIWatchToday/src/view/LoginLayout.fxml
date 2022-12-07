@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="345.0" prefWidth="500.0" styleClass="yellowPane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <Pane layoutX="173.0" layoutY="14.0" prefHeight="70.0" prefWidth="155.0" styleClass="whiteContainer">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="128.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/loginTitle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="18.0" layoutY="97.0" prefHeight="159.0" prefWidth="465.0" styleClass="whiteContainer">
+         <children>
+            <TextField fx:id="loginId" layoutX="132.0" layoutY="16.0" prefHeight="39.0" prefWidth="319.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassword" layoutX="132.0" layoutY="74.0" prefHeight="39.0" prefWidth="319.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="37.0" fitWidth="40.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/idTitle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="99.0" layoutX="17.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/passwordTitle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="423.0" layoutX="39.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/cautionTitle%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="148.0" layoutY="268.0" prefHeight="61.0" prefWidth="205.0" styleClass="whiteContainer">
+         <children>
+            <Button fx:id="loginBtn" layoutX="104.0" layoutY="11.0" mnemonicParsing="false" onAction="#login" styleClass="mainBtn" text="로그인">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeStartBtn" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#changeStart" styleClass="mainBtn" text="이전">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="65.0" fitWidth="60.0" layoutX="379.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/chunsig%20(1).jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="410.0" prefWidth="730.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <Pane layoutX="14.0" layoutY="15.0" prefHeight="380.0" prefWidth="290.0" styleClass="blackContainer">
+         <children>
+            <Button fx:id="changeMemberBtn" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#changeMember" styleClass="mainBtn" text="회원정보 확인하기">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeInquiryBtn" layoutX="19.0" layoutY="308.0" mnemonicParsing="false" onAction="#changeInquiry" styleClass="mainBtn" text="예매 정보 조회하기">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeMovieBtn" layoutX="20.0" layoutY="95.0" mnemonicParsing="false" onAction="#changeMovie" styleClass="mainBtn" text="현재 상영중인 영화">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeCinemaBtn" layoutX="36.0" layoutY="166.0" mnemonicParsing="false" onAction="#changeCinema" styleClass="mainBtn" text="영화관 확인하기">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeMovieChoiceBtn" layoutX="49.0" layoutY="237.0" mnemonicParsing="false" onAction="#changeMovieChoice" styleClass="mainBtn" text="영화 예매하기">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label id="tltleLabel" layoutX="367.0" layoutY="64.0" text="Managing">
+         <font>
+            <Font name="Cooper Black" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeStartBtn" layoutX="607.0" layoutY="355.0" mnemonicParsing="false" onAction="#changeStart" styleClass="mainBtn" text="로그아웃">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="348.0" layoutY="214.0" prefHeight="121.0" prefWidth="345.0" styleClass="blackContainer">
+         <children>
+            <Label id="nameLabel" fx:id="nameLabel" layoutX="17.0" layoutY="14.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label id="nameLabel" layoutX="15.0" layoutY="77.0" text="감사합니다 ~(-▽- ~)" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+            <Label id="nameLabel" layoutX="15.0" layoutY="46.0" text="제 프로그램을 이용해 주셔서" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label id="tltleLabel" layoutX="369.0" layoutY="148.0" text="Reservations">
+         <font>
+            <Font name="Cooper Black" size="45.0" />
+         </font>
+      </Label>
+      <Label id="tltleLabel" layoutX="367.0" layoutY="106.0" text="Movie">
+         <font>
+            <Font name="Cooper Black" size="45.0" />
+         </font>
+      </Label>
+      <Button id="clickMeBtn" fx:id="changeClickMeBtn" layoutX="546.0" layoutY="61.0" mnemonicParsing="false" onAction="#changeClickMe" text="Click Me!">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

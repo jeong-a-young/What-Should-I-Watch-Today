@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="670.0" styleClass="purplePane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MovieChoiceController">
+   <children>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="24.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/chunsig%20(2).PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="295.0" layoutY="14.0" prefHeight="76.0" prefWidth="200.0" styleClass="blackContainer">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="188.0" layoutX="9.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/movieChoiceTitle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="movieTableView" layoutX="144.0" layoutY="155.0" prefHeight="180.0" prefWidth="504.0">
+         <columns>
+            <TableColumn fx:id="movieId" prefWidth="100.0" text="movie_id" />
+            <TableColumn fx:id="movieTitle" prefWidth="260.0" text="title" />
+            <TableColumn fx:id="movieGenre" prefWidth="150.0" text="genre" />
+         </columns>
+      </TableView>
+      <Button layoutX="562.0" layoutY="344.0" mnemonicParsing="false" onAction="#getMovie" text="전체 보기">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="313.0" layoutY="349.0" prefHeight="53.0" prefWidth="165.0" styleClass="blackContainer">
+         <children>
+            <Button fx:id="changeMainBtn" layoutX="10.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeMain" prefHeight="33.0" prefWidth="68.0" styleClass="mainBtn" text="이전">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changeScheduleChoiceBtn" layoutX="88.0" layoutY="7.0" mnemonicParsing="false" onAction="#insertMovieId" prefHeight="33.0" prefWidth="68.0" styleClass="mainBtn" text="다음">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="selectMovieTitle" layoutX="230.0" layoutY="104.0" prefHeight="39.0" prefWidth="333.0" promptText="찾으시는 영화 제목을 입력하세요.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="578.0" layoutY="104.0" mnemonicParsing="false" onAction="#selectGetMovie" text="검색">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

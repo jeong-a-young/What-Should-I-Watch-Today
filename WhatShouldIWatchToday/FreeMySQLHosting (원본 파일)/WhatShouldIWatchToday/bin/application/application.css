@@ -1,0 +1,96 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.purplePane {
+	-fx-background-image : url(/resources/purpleBackground.PNG);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+.yellowPane {
+	-fx-background-image : url(/resources/yellowBackground.jpg);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+.blackContainer {
+	-fx-background-color : rgba(0.0, 0.0, 0.0, 0.5);
+	-fx-background-radius: 5.0px;
+}
+
+.whiteContainer {
+	-fx-background-color : rgba(255.0, 255.0, 255.0, 0.5);
+	-fx-background-radius: 15.0px;
+}
+
+.mainBtn{
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50.0%, white 100.0%),
+        radial-gradient(center 50.0% -40.0%, radius 200.0%, #e6e6e6 45.0%, rgba(230.0, 230.0, 230.0, 0.0) 50.0%);
+    -fx-background-radius: 30.0;
+    -fx-background-insets: 0.0,1.0,1.0;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 1.0), 5.0, 0.0, 1.0, 1.0);
+}
+
+.mainBtn:hover {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50.0%, white 100.0%),
+        radial-gradient(center 50.0% -40.0%, radius 200.0%, #e6e6e6 45.0%, rgba(230.0, 230.0, 230.0, 0.0) 50.0%);
+    -fx-background-radius: 30.0;
+    -fx-background-insets: 0.0,1.0,1.0;
+    -fx-effect: innershadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.7), 7.0, 0.0, 1.0, 1.0);
+}
+
+#startPane {
+	-fx-background-image : url(/resources/startBackground.png);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#mainPane {
+	-fx-background-image : url(/resources/mainBackground.png);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#clickMePane {
+	-fx-background-image : url(/resources/clickMeBackground.png);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#memberPane {
+	-fx-background-image : url(/resources/memberBackground.jpg);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#seatPane {
+	-fx-background-image : url(/resources/seat.PNG);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#inquiryPane {
+	-fx-background-image : url(/resources/inquiryBackground.png);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#clickMeBtn {
+	-fx-background-color: #CA9C79;
+}
+
+#clickMeBtn:hover {
+	-fx-background-color: #CA9C79;
+}
+
+#tltleLabel {
+	-fx-effect: dropshadow(three-pass-box, rgba(250.0, 250.0, 250.0, 1.0), 3.5, 5.0, 0.0, 0.0);
+}
+
+#nameLabel {
+	-fx-effect: dropshadow(three-pass-box, rgba(255.0, 255.0, 255.0, 1.0), 2.0, 0.5, 0.0, 0.0);
+}
