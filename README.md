@@ -2,6 +2,7 @@
 제작 기간: 2021.08.31 ~ 2021.09.30 (총 31일) <br>
 개발 언어: <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> <img alt=" openjdk" src ="https://img.shields.io/badge/JAVA-0769AD.svg?&style=for-the-badge&logo= openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white"> <br>
 개발 툴: <img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255.svg?&style=for-the-badge&logo=Eclipse%20IDE&logoColor=white"> <img src="https://img.shields.io/badge/XAMPP-FB7A24.svg?&style=for-the-badge&logo=XAMPP&logoColor=white"> <br>
+[디자인을 확인하고 싶다면?](http://www.yydhsoft.com:8080/index.php?mid=gallery21&category=167&page=4&document_srl=1796)
 
 <hr>
 
